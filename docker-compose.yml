@@ -6,6 +6,7 @@ services:
       dockerfile: ./Dockerfile
     environment:
       - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - BING_USER_TOKEN=${BING_USER_TOKEN}
     volumes:
       - ./settings.js:/var/chatgpt-api/settings.js:cached
     ports:
